@@ -2,10 +2,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String caminhoArquivo = "HASHTDEFINAL/female_names.txt";
+        String caminhoArquivo = "female_names.txt"; // ou PATH FROM CONTENT ROOT
         RCSV rcsv = new RCSV(caminhoArquivo);
 
-        // Lê os nomes do arquivo e exibe a quantidade
         List<String> nomes = rcsv.lerArquivo();
         if (nomes.isEmpty()) {
             System.out.println("Erro: Arquivo vazio ou não encontrado.");
