@@ -17,7 +17,7 @@ public class Main {
 
         long inicio, fim;
 
-        // Inserção - Tabela Simples
+     
         System.out.println("Iniciando inserção na tabela simples...");
         inicio = System.nanoTime();
         for (String nome : nomes) {
@@ -26,7 +26,7 @@ public class Main {
         fim = System.nanoTime();
         long tempoInsercaoSimples = fim - inicio;
 
-        // Inserção - Tabela Avançada
+       
         System.out.println("Iniciando inserção na tabela avançada...");
         inicio = System.nanoTime();
         for (String nome : nomes) {
@@ -35,7 +35,7 @@ public class Main {
         fim = System.nanoTime();
         long tempoInsercaoAvancada = fim - inicio;
 
-        // Busca - Tabela Simples
+     
         System.out.println("Iniciando busca na tabela simples...");
         inicio = System.nanoTime();
         for (String nome : nomes) {
@@ -44,7 +44,7 @@ public class Main {
         fim = System.nanoTime();
         long tempoBuscaSimples = fim - inicio;
 
-        // Busca - Tabela Avançada
+       
         System.out.println("Iniciando busca na tabela avançada...");
         inicio = System.nanoTime();
         for (String nome : nomes) {
@@ -53,7 +53,7 @@ public class Main {
         fim = System.nanoTime();
         long tempoBuscaAvancada = fim - inicio;
 
-        // Geração do Relatório
+        
         System.out.println("\nRelatório de Desempenho:");
         rcsv.gerarRelatorio("Tabela Simples", tabelaSimples, tempoInsercaoSimples, tempoBuscaSimples);
         rcsv.gerarRelatorio("Tabela Avançada", tabelaAvancada, tempoInsercaoAvancada, tempoBuscaAvancada);
